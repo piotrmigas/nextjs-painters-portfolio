@@ -23,9 +23,7 @@ const Navbar = () => {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <Link href="/">
-                  <a className="flex-shrink-0 flex items-center text-lg text-gray-400 font font-semibold">
-                    Emilia Kina
-                  </a>
+                  <a className="flex-shrink-0 flex items-center text-lg text-gray-400 font-semibold">Emilia Kina</a>
                 </Link>
                 <div className="hidden sm:block sm:mx-auto">
                   <div className="flex space-x-4">
