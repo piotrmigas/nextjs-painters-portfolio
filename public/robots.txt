@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://emiliakina.vercel.app/sitemap.xml
