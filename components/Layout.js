@@ -22,7 +22,7 @@ const Layout = ({ children, title }) => {
           <meta property="og:title" content={title} key="ogtitle" />
         </Head>
         <Navbar />
-        <main className="mx-auto text-gray-800">{children}</main>
+        <main className="text-gray-800">{children}</main>
       </div>
       <Footer />
     </div>
