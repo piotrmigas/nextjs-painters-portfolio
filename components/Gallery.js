@@ -25,7 +25,7 @@ const Gallery = ({ options, loaded, onLoad }) => {
                 },
               },
             }}
-            className="grid grid-cols-4 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-12 gap-2 mx-auto max-w-6xl px-12 py-auto"
+            className="grid grid-cols-4 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-12 gap-2 mx-auto max-w-6xl px-12 pb-12"
           >
             {(router.pathname === "/works" ? worksImgs : exhibitionImgs)
               .sort((a, b) => b.id - a.id)

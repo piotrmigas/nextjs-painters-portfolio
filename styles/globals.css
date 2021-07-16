@@ -25,9 +25,3 @@ i {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
