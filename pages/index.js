@@ -24,7 +24,7 @@ const Home = () => {
         <div className="max-w-6xl px-12 mx-auto">
           <h5 className="py-4 text-center font-semibold">About</h5>
           <p className="pb-4">
-            Born in 1990. In 2010-2015 I studied at the Faculty of Painting of the Academy of Fine Arts. Jan Matejko in
+            Born in 1990. In 2010-2015 I studied at the Faculty of Painting of the Jan Matejko Academy of Fine Arts in
             Krakow. I mainly deal with painting and photography. The works arise from theoretical considerations and are
             rich in references to traditional painting. The image-curtain motif that I use is a clear reference to the
             Renaissance concept of the image as a window to the world. The theme of opening is replaced with a
