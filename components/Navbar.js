@@ -6,6 +6,12 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 const Navbar = () => {
   const router = useRouter();
 
+  const navigation = [
+    { name: "About/Contact", href: "/" },
+    { name: "Works", href: "/works" },
+    { name: "Exhibition Views", href: "/exhibitions" },
+  ];
+
   return (
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
@@ -27,45 +33,21 @@ const Navbar = () => {
                 </Link>
                 <div className="hidden sm:block sm:mx-auto">
                   <div className="flex space-x-4">
-                    <Link href="/">
-                      <a
-                        aria-label="about"
-                        className={`${
-                          router.pathname == "/"
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                        }
+                    {navigation.map(({ name, href }) => (
+                      <Link href={href} key={name}>
+                        <a
+                          aria-label={name}
+                          className={`${
+                            router.pathname == href
+                              ? "bg-gray-900 text-white"
+                              : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                          }
                         px-3 py-2 rounded-md text-sm font-medium`}
-                      >
-                        About/Contact
-                      </a>
-                    </Link>
-                    <Link href="/works">
-                      <a
-                        aria-label="works"
-                        className={`${
-                          router.pathname == "/works"
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                        }
-                        px-3 py-2 rounded-md text-sm font-medium`}
-                      >
-                        Works
-                      </a>
-                    </Link>
-                    <Link href="/exhibitions">
-                      <a
-                        aria-label="exhibitions"
-                        className={`${
-                          router.pathname == "/exhibitions"
-                            ? "bg-gray-900 text-white"
-                            : "text-gray-300 hover:bg-gray-700 hover:text-white"
-                        }
-                        px-3 py-2 rounded-md text-sm font-medium`}
-                      >
-                        Exhibition Views
-                      </a>
-                    </Link>
+                        >
+                          {name}
+                        </a>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -78,88 +60,24 @@ const Navbar = () => {
           </div>
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link href="/">
-                <a
-                  aria-label="about"
-                  className={`${
-                    router.pathname == "/" && "bg-gray-900 text-white"
-                  } text-gray-300 hover:bg-gray-700 hover:text-white
-                  block px-3 py-2 rounded-md text-base font-medium`}
-                >
-                  About/Contact
-                </a>
-              </Link>
-              <Link href="/works">
-                <a
-                  aria-label="works"
-                  className={`${
-                    router.pathname == "/works" && "bg-gray-900 text-white"
-                  } text-gray-300 hover:bg-gray-700 hover:text-white
-               block px-3 py-2 rounded-md text-base font-medium`}
-                >
-                  Works
-                </a>
-              </Link>
-              <Link href="/exhibitions">
-                <a
-                  aria-label="exhibitions"
-                  className={`${
-                    router.pathname == "/exhibitions" && "bg-gray-900 text-white"
-                  } text-gray-300 hover:bg-gray-700 hover:text-white
-                block px-3 py-2 rounded-md text-base font-medium`}
-                >
-                  Exhibition Views
-                </a>
-              </Link>
+              {navigation.map(({ name, href }) => (
+                <Link href={href} key={name}>
+                  <a
+                    aria-label={href}
+                    className={`${
+                      router.pathname == href && "bg-gray-900 text-white"
+                    } text-gray-300 hover:bg-gray-700 hover:text-white
+                  block px-3 py-2 rounded-md text-base font-medium text-center`}
+                  >
+                    {name}
+                  </a>
+                </Link>
+              ))}
             </div>
           </Disclosure.Panel>
         </>
       )}
     </Disclosure>
-    // <nav className="flex  items-center">
-    //   <Link href="/">
-    //     <a className="navbar-brand" aria-label="logo">
-    //       <span className="fw-bold mb-0">Emilia Kina</span>
-    //     </a>
-    //   </Link>
-    //   <button
-    //     className="navbar-toggler float-right"
-    //     type="button"
-    //     data-toggle="collapse"
-    //     data-target="#navbar"
-    //     aria-label="Toggle navigation"
-    //   >
-    //     <span className="navbar-toggler-icon" />
-    //   </button>
-    //   <div className="navbar-collapse collapse" id="navbar">
-    //     <ul className="navbar-nav mx-auto">
-    //       <li>
-    //         <Link href="/">
-    //           <a className={`nav-link ${router.pathname == "/" && "active"}`} aria-label="home">
-    //             About/Contact
-    //           </a>
-    //         </Link>
-    //       </li>
-    //       <li>
-    //         <Link href="/works">
-    //           <a className={`nav-link ${router.pathname == "/works" && "active"}`} aria-label="works">
-    //             Works
-    //           </a>
-    //         </Link>
-    //       </li>
-    //       <li>
-    //         <Link href="/exhibitions">
-    //           <a className={`nav-link ${router.pathname == "/exhibitions" && "active"}`} aria-label="exhibitions">
-    //             Exhibition Views
-    //           </a>
-    //         </Link>
-    //       </li>
-    //     </ul>
-    //     <a href="https://www.instagram.com/emilia_kina" aria-label="Instagram">
-    //       <i className="fab fa-instagram align-middle" />
-    //     </a>
-    //   </div>
-    // </nav>
   );
 };
 
