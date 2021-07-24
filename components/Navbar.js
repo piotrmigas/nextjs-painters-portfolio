@@ -37,9 +37,7 @@ const Navbar = () => {
                       <Link href={href} key={name}>
                         <a
                           aria-label={name}
-                          className={`${
-                            router.pathname === href && "text-gray-700 bg-red-50"
-                          } text-gray-700 hover:bg-red-50
+                          className={`${router.pathname === href && "bg-red-50"} text-gray-700 hover:bg-red-50
                         px-3 py-2 rounded-full text-sm font-medium`}
                         >
                           {name}
@@ -62,7 +60,7 @@ const Navbar = () => {
                 <Link href={href} key={name}>
                   <a
                     aria-label={href}
-                    className={`${router.pathname === href && "bg-gray-900 text-white"}
+                    className={`${router.pathname === href && "text-gray-700 bg-red-50"} text-gray-700 hover:bg-red-50
                   block px-3 py-2 rounded-md text-base font-medium text-center`}
                   >
                     {name}
