@@ -13,7 +13,7 @@ const Navbar = () => {
   ];
 
   return (
-    <Disclosure as="nav" className="bg-gradient-to-r from-red-200 via-red-300 to-yellow-200">
+    <Disclosure as="nav" className="bg-gradient-to-r from-blue-200 to-blue-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -37,7 +37,7 @@ const Navbar = () => {
                       <Link href={href} key={name}>
                         <a
                           aria-label={name}
-                          className={`${router.pathname === href && "bg-red-50"} text-gray-700 hover:bg-red-50
+                          className={`${router.pathname === href ? "bg-blue-300" : "hover:bg-white"} text-gray-700 
                         px-3 py-2 rounded-full text-sm font-medium`}
                         >
                           {name}
@@ -60,8 +60,9 @@ const Navbar = () => {
                 <Link href={href} key={name}>
                   <a
                     aria-label={href}
-                    className={`${router.pathname === href && "text-gray-700 bg-red-50"} text-gray-700 hover:bg-red-50
-                  block px-3 py-2 rounded-md text-base font-medium text-center`}
+                    className={`${
+                      router.pathname === href ? "bg-blue-300" : "hover:bg-white"
+                    } text-gray-700 block px-3 py-2 rounded-md text-base font-medium text-center`}
                   >
                     {name}
                   </a>
