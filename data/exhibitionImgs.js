@@ -194,4 +194,14 @@ export const exhibitionImgs = [
     src: "images/exhibitionViews/39.jpg",
     caption: `"Wabi-Sabi" Kristin Hjellegjerde Gallery/London/2021 ••• fot: Courtesy of Kristin Hjellegjerde Gallery`,
   },
+  {
+    id: 40,
+    src: "images/exhibitionViews/40.jpg",
+    caption: `"Soft Matters" Raster Gallery/Warszawa/2021 ••• fot: Courtesy of Raster Gallery`,
+  },
+  {
+    id: 41,
+    src: "images/exhibitionViews/41.jpg",
+    caption: `"Soft Matters" Raster Gallery/Warszawa/2021 ••• fot: Courtesy of Raster Gallery`,
+  },
 ];
