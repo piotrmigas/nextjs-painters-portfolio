@@ -37,4 +37,8 @@ export const groupExhibitions = [
   { id: 30, name: "2021 : ENLIVENING : Pilipczuk Gallery : Copenhagen : DNK" },
   { id: 31, name: "2021 : Wabi - Sabi : Kristin Hjellegjerde Gallery : London (London Bridge) : UK" },
   { id: 32, name: "2021 : SOFT MATTERS : Raster Gallery : Warszawa : PL" },
+  {
+    id: 33,
+    name: '2021 : "In these days of tumult, heat and dazzle I retreat in my mind" : Stefan Gierowski Foundation : Warszawa : PL',
+  },
 ];

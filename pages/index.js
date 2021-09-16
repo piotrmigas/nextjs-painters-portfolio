@@ -55,7 +55,7 @@ const Home = () => {
           </ul>
           <p className="font-semibold py-5">
             Contact:{" "}
-            <a href="mailto:kinaemila@gmail.com" className="text-blue-400 no-underline hover:text-blue-500">
+            <a href="mailto:kinaemila@gmail.com" className="text-blue-600 no-underline hover:text-blue-700">
               kinaemila@gmail.com
             </a>
           </p>

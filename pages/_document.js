@@ -10,12 +10,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
-            integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
-            crossOrigin="anonymous"
-          />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         </Head>
         <body>
           <Main />
