@@ -12,7 +12,7 @@ class MyDocument extends Document {
         <Head>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
-          <link rel="prefetch" as="style" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         </Head>
         <body>
           <Main />
