@@ -38,9 +38,6 @@ const Gallery = ({ options, setImgsLoaded, imgsLoaded }) => {
               },
               visible: {
                 opacity: 1,
-                transition: {
-                  delay: 0.4,
-                },
               },
             }}
             className="grid grid-cols-4 sm:grid-cols-7 md:grid-cols-9 lg:grid-cols-12 gap-2 mx-auto max-w-6xl px-12 pb-12"
