@@ -11,19 +11,25 @@ const Gallery = ({ options, setImgsLoaded, imgsLoaded }) => {
   const images = router.pathname === "/works" ? worksImgs : exhibitionImgs;
 
   useEffect(() => {
-    const loadImage = (image) => {
-      return new Promise((resolve, reject) => {
-        const loadImg = new Image();
-        loadImg.src = image.src;
-        loadImg.onload = () => resolve(image.src);
-        loadImg.onerror = (err) => reject(err);
-      });
+    const handleLoad = async () => {
+      try {
+        const loadImage = async (image) => {
+          await new Promise((resolve, reject) => {
+            const loadImg = new Image();
+            loadImg.src = image.src;
+            loadImg.onload = () => resolve(image.src);
+            loadImg.onerror = (err) => reject(err);
+          });
+        };
+        await Promise.all(images.map((image) => loadImage(image)));
+        setImgsLoaded(true);
+      } catch (err) {
+        console.log("Failed to load images", err);
+      }
     };
 
-    Promise.all(images.map((image) => loadImage(image)))
-      .then(() => setImgsLoaded(true))
-      .catch((err) => console.log("Failed to load images", err));
-  }, []);
+    handleLoad();
+  }, [images, setImgsLoaded]);
 
   return (
     imgsLoaded && (
