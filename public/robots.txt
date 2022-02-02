@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://emiliakina.vercel.app/sitemap.xml
+Sitemap: https://emiliakina.art/sitemap.xml
