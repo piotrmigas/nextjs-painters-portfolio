@@ -51,8 +51,8 @@ const Gallery = ({ options, setImgsLoaded, imgsLoaded }) => {
             {images
               .sort((a, b) => b.id - a.id)
               .map(({ id, src, caption }) => (
-                <div className="aspect-w-1 aspect-h-1 relative" key={id}>
-                  <img src={src} alt={caption} className="object-cover cursor-pointer" />
+                <div className="aspect-w-1 aspect-h-1 relative hover:bg-blue-400" key={id}>
+                  <img src={src} alt={caption} className="object-cover cursor-pointer hover:opacity-60" />
                 </div>
               ))}
           </motion.div>
