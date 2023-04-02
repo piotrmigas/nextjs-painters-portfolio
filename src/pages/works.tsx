@@ -4,7 +4,11 @@ import Layout from '../components/Layout';
 import Gallery from '../components/Gallery';
 import { LightboxOptions } from '../../types';
 
-const Works = ({ options }: { options: LightboxOptions }) => {
+type WorksProps = {
+  options: LightboxOptions;
+};
+
+const Works = ({ options }: WorksProps) => {
   const [imgsLoaded, setImgsLoaded] = useState(false);
 
   return (

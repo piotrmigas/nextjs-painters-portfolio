@@ -4,7 +4,11 @@ import Layout from '../components/Layout';
 import Gallery from '../components/Gallery';
 import { LightboxOptions } from '../../types';
 
-const ExhibitionViews = ({ options }: { options: LightboxOptions }) => {
+type ExhibitionViewsProps = {
+  options: LightboxOptions;
+};
+
+const ExhibitionViews = ({ options }: ExhibitionViewsProps) => {
   const [imgsLoaded, setImgsLoaded] = useState(false);
 
   return (
