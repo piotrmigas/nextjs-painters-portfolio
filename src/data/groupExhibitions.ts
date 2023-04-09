@@ -48,4 +48,6 @@ export const groupExhibitions = [
   { id: 35, name: '2021 : Artissima : East Contemporary Gallery : Mediolan : IT' },
   { id: 36, name: '2022 : From “Abstraction” to Abstraction : Stefan Gierowski Foundation : Warszawa : PL' },
   { id: 37, name: '2022 : Noontime ghosts : Eve Leibe Gallery : Londyn : UK' },
+  { id: 38, name: '2023 : NADA Miami 2022 : Raster Gallery : Miami : USA' },
+  { id: 39, name: '2023 : FELIX Art Fair : Raster Gallery : Los Angeles : USA' },
 ];
