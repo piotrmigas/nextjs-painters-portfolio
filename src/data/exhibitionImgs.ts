@@ -207,4 +207,59 @@ export const exhibitionImgs = [
   { id: 42, src: '/images/exhibitionViews/42.webp', caption: `"The Eyelid" Eastcontemporary Gallery/Milan/2022` },
   { id: 43, src: '/images/exhibitionViews/43.webp', caption: `"The Eyelid" Eastcontemporary Gallery/Milan/2022` },
   { id: 44, src: '/images/exhibitionViews/44.webp', caption: `"The Eyelid" Eastcontemporary Gallery/Milan/2022` },
+  {
+    id: 45,
+    src: '/images/exhibitionViews/45.webp',
+    caption: `"PRZEŚWIT" Gallery Grey House/Kraków/2021/2022 ••• fot: Filip Rybkowski`,
+  },
+  {
+    id: 46,
+    src: '/images/exhibitionViews/46.webp',
+    caption: `"PRZEŚWIT" Gallery Grey House/Kraków/2021/2022 ••• fot: Filip Rybkowski`,
+  },
+  {
+    id: 47,
+    src: '/images/exhibitionViews/47.webp',
+    caption: `"PRZEŚWIT" Gallery Grey House/Kraków/2021/2022 ••• fot: Filip Rybkowski`,
+  },
+  {
+    id: 48,
+    src: '/images/exhibitionViews/48.webp',
+    caption: `"PRZEŚWIT" Gallery Grey House/Kraków/2021/2022 ••• fot: Filip Rybkowski`,
+  },
+  {
+    id: 49,
+    src: '/images/exhibitionViews/49.webp',
+    caption: `"PRZEŚWIT" Gallery Grey House/Kraków/2021/2022 ••• fot: Filip Rybkowski`,
+  },
+  {
+    id: 50,
+    src: '/images/exhibitionViews/50.webp',
+    caption: `"Le soir qui tombe" Raster Gallery/Warszawa/2022 ••• photo: Courtesy of Raster Gallery`,
+  },
+  {
+    id: 51,
+    src: '/images/exhibitionViews/51.webp',
+    caption: `"Le soir qui tombe" Raster Gallery/Warszawa/2022 ••• photo: Courtesy of Raster Gallery`,
+  },
+  {
+    id: 52,
+    src: '/images/exhibitionViews/52.webp',
+    caption: `"Le soir qui tombe" Raster Gallery/Warszawa/2022 ••• photo: Courtesy of Raster Gallery`,
+  },
+  {
+    id: 53,
+    src: '/images/exhibitionViews/53.webp',
+    caption: `"Le soir qui tombe" Raster Gallery/Warszawa/2022 ••• photo: Courtesy of Raster Gallery`,
+  },
+  {
+    id: 54,
+    src: '/images/exhibitionViews/54.webp',
+    caption: `"Le soir qui tombe" Raster Gallery/Warszawa/2022 ••• photo: Courtesy of Raster Gallery`,
+  },
+  {
+    id: 55,
+    src: '/images/exhibitionViews/55.webp',
+    caption: `"Le soir qui tombe" Raster Gallery/Warszawa/2022 ••• photo: Courtesy of Raster Gallery`,
+  },
 ];
