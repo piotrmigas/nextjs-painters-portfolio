@@ -52,4 +52,6 @@ export const groupExhibitions = [
   { id: 39, name: '2023 : FELIX Art Fair : Raster Gallery : Los Angeles : USA' },
   { id: 40, name: '2023 : Warsaw Spring Art Fair : Raster Gallery : Warszawa : PL' },
   { id: 41, name: '2023 : Miart Art Fair : eastcontemporary gallery : Mediolan : IT' },
+  { id: 42, name: '2023 : And Listen To The Wind Blow : Shefter Gallery : Kraków : PL' },
+  { id: 43, name: '2023 : CUT: Piana Gallery : Kraków : PL' },
 ];
