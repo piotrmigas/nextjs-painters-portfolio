@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareFull } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Navbar = () => {
   const router = useRouter();
@@ -57,7 +60,7 @@ const Navbar = () => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i className='fab fa-instagram' />
+                  <FontAwesomeIcon icon={faInstagram} mask={faSquareFull} />
                 </a>
               </div>
             </div>
